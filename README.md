@@ -6,7 +6,7 @@ This project provides a book recommendation system API built using Flask. The sy
 - Check Book Existence: Users can check if a book exists in the dataset by providing the book's title and author.
 - Personalized Recommendations: Users can receive personalized book recommendations based on their input ratings for selected titles.
 
-##Requirements
+## Requirements
 Python 3.x
 Flask
 Flask-CORS
@@ -41,7 +41,7 @@ python app.py
 - /exist (POST): Check if a book exists.
   - Request Body: {"title": "book_title", "author": "book_author"}
   - Response Body: {"exist": true/false}
-  - 
+  
 - /recommendations (POST): Get personalized recommendations.
   - Request Body: [{"title": "book_title", "mark": rating}, {"title": "book_title", "mark": rating}, ...]
   - Response Body: {"recommendations": [{"title": "book_title", "authors": ["Author 1"], "description": "Book description", "cover_image": "image_url"}, ...]}
