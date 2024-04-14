@@ -13,14 +13,14 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-DATA_FILE_PATH = ""
+DATA_FILE_PATH = "dataset.csv"
 GOOGLE_BOOKS_API_KEY = ''
 
 BOOKS_DF = pd.read_csv(DATA_FILE_PATH)
 
 
 def search_titles_generator(prefix: str, dataframe: pd.DataFrame) -> Generator[str, None, None]:
-  """
+    """
     Generate titles that match the given prefix from the dataframe.
 
     Args:
@@ -45,7 +45,7 @@ def search_titles_generator(prefix: str, dataframe: pd.DataFrame) -> Generator[s
 
 @app.route("/titles", methods=["POST"])
 def get_titles() -> Dict[str, List[str]]:
-  """
+    """
     Get matching titles based on a search prefix.
 
     Returns:
@@ -67,7 +67,7 @@ def get_titles() -> Dict[str, List[str]]:
 
 @app.route("/exist", methods=["POST"])
 def book_exist() -> Dict[str, bool]:
-  """
+    """
     Check if a book exists in the dataset.
 
     Returns:
@@ -94,7 +94,7 @@ def book_exist() -> Dict[str, bool]:
 
 
 class RecommendationAPI:
-  """
+    """
     Recommendation API class.
     """
     def __init__(self) -> None:
