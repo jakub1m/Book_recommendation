@@ -47,7 +47,7 @@ python app.py
   - Response Body: {"recommendations": [{"title": "book_title", "authors": ["Author 1"], "description": "Book description", "cover_image": "image_url"}, ...]}
 
 ## Dataset
-The dataset used in this project contains information about books, including titles, authors, and numeric ratings. You can find the dataset in the CSV file format.
+The dataset used in this project contains information about books, including titles, authors, and numeric ratings. You can find the dataset in the dataset.rar file.
 
 
 ## License
