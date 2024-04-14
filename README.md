@@ -49,8 +49,6 @@ python app.py
 ## Dataset
 The dataset used in this project contains information about books, including titles, authors, and numeric ratings. You can find the dataset in the CSV file format.
 
-## Notebooks
-For creating the dataset or conducting data analysis, you can refer to the Jupyter notebook provided in the repository.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
